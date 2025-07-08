@@ -1,5 +1,5 @@
 import { ChevronDown } from 'lucide-react';
-import heroImage from '../assets/o_100425.png';
+import heroImage from '../assets/Capa.jpeg';
 
 const HeroSection = () => {
   const scrollToNext = () => {

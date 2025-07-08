@@ -1,7 +1,7 @@
 import { Waves, Shield, Heart, Recycle } from 'lucide-react';
 import cascudoLogo from '../assets/Cascudo_LogoMarca_Branco.png';
-import cascudoImage from '../assets/o_150425.png';
-import cascudoProduct from '../assets/o_160425.png';
+import cascudoImage from '../assets/CASC.png';
+import cascudoProduct from '../assets/Cascudo_Prancha_Final_web.png';
 
 const CascudoSection = () => {
   const features = [
@@ -51,6 +51,14 @@ const CascudoSection = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
           {/* Left Content */}
           <div className="space-y-8">
+            {/* Imagem CASC acima do conteúdo */}
+            <div className="relative mb-8">
+              <img 
+                src={cascudoImage} 
+                alt="Cascudo produto" 
+                className="rounded-2xl shadow-2xl hover-scale transition-transform duration-500 w-full"
+              />
+            </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
               <h3 className="text-2xl font-bold text-white mb-4">
                 Pequeno no Leash, Gigante no Impacto
@@ -61,24 +69,34 @@ const CascudoSection = () => {
                 atrapalhar sua performance, ele transforma atitude em impacto.
               </p>
               <div className="flex items-center space-x-4">
-                <button className="bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover-scale">
+                <a 
+                  href="https://ondamaremato.weebly.com/passoapasso.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover-scale"
+                >
                   Guia de Instalação
-                </button>
-                <button className="border border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-white px-6 py-3 rounded-full font-semibold transition-all duration-300">
+                </a>
+                <a 
+                  href="https://ondamaremato.weebly.com/cascudo.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-white px-6 py-3 rounded-full font-semibold transition-all duration-300"
+                >
                   Saiba Mais
-                </button>
+                </a>
               </div>
             </div>
           </div>
 
-          {/* Right Image */}
+          {/* Right Image - Cascudo na prancha */}
           <div className="relative">
             <img 
-              src={cascudoImage} 
-              alt="Cascudo em ação" 
+              src={cascudoProduct} 
+              alt="Cascudo na prancha" 
               className="rounded-2xl shadow-2xl hover-scale transition-transform duration-500"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-2xl"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-2xl"></div>
           </div>
         </div>
 

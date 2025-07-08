@@ -1,6 +1,6 @@
 import { Target, Users, Lightbulb, Heart } from 'lucide-react';
-import aboutImage from '../assets/o_310125.png';
-import surfImage from '../assets/o_20725.png';
+import aboutImage from '../assets/Abs.jpeg';
+import surfImage from '../assets/Oceano_Cena.jpg';
 
 const AboutSection = () => {
   const values = [
@@ -147,13 +147,13 @@ const AboutSection = () => {
             Junte-se a milhares de surfistas que já escolheram fazer a diferença. 
             Cada onda é uma oportunidade de proteger o que amamos.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 hover-scale">
-              Conheça o Cascudo
-            </button>
-            <button className="border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-white px-8 py-4 rounded-full font-bold text-lg transition-all duration-300">
+          <div className="flex justify-center">
+            <a 
+              href="mailto:ondamaremato@gmail.com"
+              className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 hover-scale"
+            >
               Entre em Contato
-            </button>
+            </a>
           </div>
         </div>
       </div>

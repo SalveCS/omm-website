@@ -127,24 +127,6 @@ const EnergiaSalgadaSection = () => {
           {/* Right Animation Area */}
           <div className={`relative transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
             <div className="relative">
-              {/* Central Logo with Pulse Animation */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="relative">
-                  <img 
-                    src={energiaLogo} 
-                    alt="Energia Salgada" 
-                    className="h-32 w-auto energy-pulse relative z-10"
-                  />
-                  {/* Pulse Rings */}
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-40 h-40 border-2 border-cyan-400/30 rounded-full animate-ping"></div>
-                  </div>
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-56 h-56 border border-cyan-400/20 rounded-full animate-ping delay-1000"></div>
-                  </div>
-                </div>
-              </div>
-              
               {/* Floating Elements */}
               <div className="relative h-96 w-full">
                 {energyElements.map((element, index) => {
