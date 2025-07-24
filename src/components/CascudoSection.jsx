@@ -48,18 +48,18 @@ const CascudoSection = () => {
         </div>
 
         {/* Main Content Grid */}
-        <div className="flex justify-center mb-20">
-          {/* Centered Content */}
-          <div className="max-w-4xl space-y-8">
+        <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
+          {/* Left Content */}
+          <div className="space-y-8">
             {/* Imagem CASC acima do conteúdo */}
-            <div className="relative mb-8 flex justify-center">
+            <div className="relative mb-8">
               <img 
                 src={cascudoImage} 
                 alt="Cascudo produto" 
-                className="rounded-2xl shadow-2xl hover-scale transition-transform duration-500 max-w-2xl w-full"
+                className="rounded-2xl shadow-2xl hover-scale transition-transform duration-500 w-full"
               />
             </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 text-center">
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
               <h3 className="text-2xl font-bold text-white mb-4">
                 Pequeno no Leash, Gigante no Impacto
               </h3>
@@ -68,7 +68,7 @@ const CascudoSection = () => {
                 recolher resíduos do oceano se torne tão natural quanto remar. Sem 
                 atrapalhar sua performance, ele transforma atitude em impacto.
               </p>
-              <div className="flex items-center justify-center space-x-4">
+              <div className="flex items-center space-x-4">
                 <a 
                   href="https://ondamaremato.weebly.com/passoapasso.html"
                   target="_blank"
@@ -87,6 +87,16 @@ const CascudoSection = () => {
                 </a>
               </div>
             </div>
+          </div>
+
+          {/* Right Image - Cascudo na prancha */}
+          <div className="relative">
+            <img 
+              src={cascudoProduct} 
+              alt="Cascudo na prancha" 
+              className="rounded-2xl shadow-2xl hover-scale transition-transform duration-500"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-2xl"></div>
           </div>
         </div>
 
@@ -149,14 +159,18 @@ const CascudoSection = () => {
           </div>
         </div>
 
-          <div className="bg-gradient-to-r from-cyan-500/10 to-blue-500/10 rounded-2xl p-8 border border-cyan-400/20">
-            <h4 className="text-2xl font-bold text-white mb-4">
-              Junte-se a nós na promoção da sustentabilidade
-            </h4>
-            <p className="text-cyan-400 text-lg">
-              E na luta contra a poluição marinha
-            </p>
-          </div>
+        {/* Call to Action */}
+        <div className="text-center mt-16">
+          <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
+            Junte-se a nós na promoção da sustentabilidade
+          </h3>
+          <p className="text-gray-300 text-lg mb-8">
+            E na luta contra a poluição marinha
+          </p>
+          <button className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white px-12 py-4 rounded-full font-bold text-lg transition-all duration-300 hover-scale shadow-lg">
+            Faça Parte do Movimento
+          </button>
+        </div>
       </div>
     </section>
   );

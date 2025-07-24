@@ -14,10 +14,17 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const scrollToSection = (sectionId) => {
+  const scrollToSection = (sectionId, event) => {
+    if (event) {
+      event.preventDefault();
+    }
+    
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
     }
     setIsMenuOpen(false);
   };
@@ -34,32 +41,32 @@ const Header = () => {
               src={logoOMM} 
               alt="Onda Mar e Mato" 
               className="h-12 w-auto hover-scale cursor-pointer"
-              onClick={() => scrollToSection('home')}
+              onClick={(e) => scrollToSection('inicio', e)}
             />
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <button 
-              onClick={() => scrollToSection('home')}
+              onClick={(e) => scrollToSection('inicio', e)}
               className="text-white hover:text-cyan-300 transition-colors font-medium"
             >
               Início
             </button>
             <button 
-              onClick={() => scrollToSection('cascudo')}
+              onClick={(e) => scrollToSection('cascudo', e)}
               className="text-white hover:text-cyan-300 transition-colors font-medium"
             >
               Cascudo
             </button>
             <button 
-              onClick={() => scrollToSection('energia-salgada')}
+              onClick={(e) => scrollToSection('energia-salgada', e)}
               className="text-white hover:text-cyan-300 transition-colors font-medium"
             >
               Energia Salgada
             </button>
             <button 
-              onClick={() => scrollToSection('sobre')}
+              onClick={(e) => scrollToSection('sobre', e)}
               className="text-white hover:text-cyan-300 transition-colors font-medium"
             >
               Sobre
@@ -88,25 +95,25 @@ const Header = () => {
           <nav className="md:hidden mt-4 pb-4 border-t border-white/20">
             <div className="flex flex-col space-y-4 pt-4">
               <button 
-                onClick={() => scrollToSection('home')}
+                onClick={(e) => scrollToSection('inicio', e)}
                 className="text-white hover:text-cyan-300 transition-colors font-medium text-left"
               >
                 Início
               </button>
               <button 
-                onClick={() => scrollToSection('cascudo')}
+                onClick={(e) => scrollToSection('cascudo', e)}
                 className="text-white hover:text-cyan-300 transition-colors font-medium text-left"
               >
                 Cascudo
               </button>
               <button 
-                onClick={() => scrollToSection('energia-salgada')}
+                onClick={(e) => scrollToSection('energia-salgada', e)}
                 className="text-white hover:text-cyan-300 transition-colors font-medium text-left"
               >
                 Energia Salgada
               </button>
               <button 
-                onClick={() => scrollToSection('sobre')}
+                onClick={(e) => scrollToSection('sobre', e)}
                 className="text-white hover:text-cyan-300 transition-colors font-medium text-left"
               >
                 Sobre

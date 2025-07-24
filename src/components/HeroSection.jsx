@@ -2,16 +2,37 @@ import { ChevronDown } from 'lucide-react';
 import heroImage from '../assets/Capa.jpeg';
 
 const HeroSection = () => {
-  const scrollToNext = () => {
+  const scrollToNext = (event) => {
+    if (event) {
+      event.preventDefault();
+    }
+    
     const element = document.getElementById('cascudo');
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+
+  const scrollToSection = (sectionId, event) => {
+    if (event) {
+      event.preventDefault();
+    }
+    
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
     }
   };
 
   return (
     <section 
-      id="home" 
+      id="inicio" 
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
       style={{
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${heroImage})`,
@@ -36,13 +57,13 @@ const HeroSection = () => {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center fade-in-up">
           <button 
-            onClick={() => document.getElementById('cascudo').scrollIntoView({ behavior: 'smooth' })}
+            onClick={(e) => scrollToSection('cascudo', e)}
             className="bg-cyan-500 hover:bg-cyan-600 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover-scale"
           >
             Conheça o Cascudo
           </button>
           <button 
-            onClick={() => document.getElementById('energia-salgada').scrollIntoView({ behavior: 'smooth' })}
+            onClick={(e) => scrollToSection('energia-salgada', e)}
             className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover-scale"
           >
             Energia Salgada
@@ -53,7 +74,7 @@ const HeroSection = () => {
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white">
         <button 
-          onClick={scrollToNext}
+          onClick={(e) => scrollToNext(e)}
           className="animate-bounce hover:text-cyan-300 transition-colors"
         >
           <ChevronDown size={32} />
