@@ -41,7 +41,7 @@ const CascudoSection = () => {
             Surfe limpo, consciência tranquila!
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            O Cascudo é mais que um produto - é uma revolução na forma como os surfistas 
+            O Cascudo é mais que um produto, é uma revolução na forma como os surfistas 
             interagem com o oceano. Uma ferramenta que transforma cada sessão de surf 
             em um ato de preservação ambiental.
           </p>

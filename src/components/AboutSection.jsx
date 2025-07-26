@@ -61,7 +61,7 @@ const AboutSection = () => {
               pelo oceano.
             </p>
             <p className="text-gray-300 text-lg leading-relaxed">
-              Hoje, somos mais que uma marca - somos um movimento. Um movimento de 
+              Hoje, somos mais que uma marca, somos um movimento. Um movimento de 
               surfistas conscientes que acreditam que é possível viver nossa paixão 
               enquanto cuidamos do planeta.
             </p>
@@ -149,10 +149,12 @@ const AboutSection = () => {
           </p>
           <div className="flex justify-center">
             <a 
-              href="mailto:ondamaremato@gmail.com"
+              href="https://www.instagram.com/ondamaremato/" 
+              target="_blank" 
+              rel="noopener noreferrer"
               className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 hover-scale"
             >
-              Entre em Contato
+              Faça Parte do Movimento
             </a>
           </div>
         </div>
