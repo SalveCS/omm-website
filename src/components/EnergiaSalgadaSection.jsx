@@ -105,7 +105,8 @@ const EnergiaSalgadaSection = () => {
                 elementos da natureza em uma sinfonia aquática.
               </p>
               <p className="text-gray-200 text-lg leading-relaxed mb-8">
-             Quando você entra no mar, não está apenas surfando, está se conectando com uma energia ancestral, pura e transformadora. 
+                Quando você entra no mar, não está apenas surfando, está se 
+                conectando com uma energia ancestral, pura e transformadora. 
                 É essa energia que nos move, nos inspira e nos faz querer 
                 proteger o que amamos.
               </p>
@@ -127,31 +128,24 @@ const EnergiaSalgadaSection = () => {
           <div className={`relative transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
             <div className="relative">
               {/* Floating Elements */}
-              <div className="relative h-96 w-full">
+              <div className="relative h-[500px] w-full flex flex-wrap justify-center items-center gap-8">
                 {energyElements.map((element, index) => {
-                  const positions = [
-                    'top-4 left-4',
-                    'top-4 right-4', 
-                    'bottom-4 left-4',
-                    'bottom-4 right-4'
-                  ];
-                  
                   return (
                     <div 
                       key={index}
-                      className={`absolute ${positions[index]} glass-effect rounded-xl p-4 w-40 hover-scale transition-all duration-300 hover:border-cyan-400/50 border border-white/20`}
+                      className={`glass-effect rounded-xl p-6 w-56 h-48 hover-scale transition-all duration-300 hover:border-cyan-400/50 border border-white/20 flex flex-col justify-center items-center text-center`}
                       style={{
                         animation: `float ${3 + index * 0.5}s ease-in-out infinite`,
                         animationDelay: `${index * 0.5}s`
                       }}
                     >
-                      <div className="text-cyan-400 mb-2">
+                      <div className="text-cyan-400 mb-3 text-3xl flex-shrink-0">
                         {element.icon}
                       </div>
-                      <h4 className="text-white font-semibold text-sm mb-1">
+                      <h4 className="text-white font-semibold text-lg mb-2 leading-tight flex-shrink-0">
                         {element.title}
                       </h4>
-                      <p className="text-gray-300 text-xs">
+                      <p className="text-gray-300 text-sm leading-relaxed flex-1">
                         {element.description}
                       </p>
                     </div>
@@ -170,7 +164,8 @@ const EnergiaSalgadaSection = () => {
             </h3>
             <p className="text-xl text-gray-200 leading-relaxed mb-12">
               Descubra o verdadeiro significado de estar em sintonia com o mundo 
-              ao seu redor. A Energia Salgada não é apenas um conceito, é uma experiência que transforma cada momento no mar em algo extraordinário.
+              ao seu redor. A Energia Salgada não é apenas um conceito, é uma 
+              experiência que transforma cada momento no mar em algo extraordinário.
             </p>
             
             {/* Interactive Elements */}

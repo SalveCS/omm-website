@@ -170,10 +170,10 @@ const Footer = () => {
               <span>© {currentYear} Onda Mar e Mato. Todos os direitos reservados.</span>
             </div>
             <div className="flex items-center space-x-6 text-gray-400 text-sm">
-              <a href="/politica-de-privacidade.html" className="hover:text-cyan-300 transition-colors">
+              <a href="/politica-de-privacidade" className="hover:text-cyan-300 transition-colors">
                 Política de Privacidade
               </a>
-              <a href="/termos-de-uso.html" className="hover:text-cyan-300 transition-colors">
+              <a href="/termos-de-uso" className="hover:text-cyan-300 transition-colors">
                 Termos de Uso
               </a>
               <span className="text-cyan-400 font-medium">
