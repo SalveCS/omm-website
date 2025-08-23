@@ -51,8 +51,8 @@ const HeroSection = () => {
         
         <p className="text-xl md:text-2xl mb-8 fade-in-up opacity-90 max-w-3xl mx-auto leading-relaxed">
           Aqui, cada escolha te aproxima do mar e da sua essência. Com produtos de alta qualidade 
-          e design criado para quem vive intensamente as ondas, entregamos mais do que estilo. 
-          Oferecemos uma conexão autêntica com a liberdade que só o oceano proporciona.
+          e design criado para quem vive intensamente as ondas, entregamos mais do que estilo: 
+          oferecemos uma conexão autêntica com a liberdade que só o oceano proporciona.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center fade-in-up">

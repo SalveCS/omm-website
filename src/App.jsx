@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
@@ -7,10 +6,8 @@ import CascudoSection from './components/CascudoSection';
 import EnergiaSalgadaSection from './components/EnergiaSalgadaSection';
 import AboutSection from './components/AboutSection';
 import Footer from './components/Footer';
-import PrivacyPolicy from './components/PrivacyPolicy';
-import TermsOfUse from './components/TermsOfUse';
 
-function HomePage() {
+function App() {
   useEffect(() => {
     // Smooth scroll behavior for the entire page
     document.documentElement.style.scrollBehavior = 'smooth';
@@ -54,18 +51,6 @@ function HomePage() {
       </main>
       <Footer />
     </div>
-  );
-}
-
-function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/politica-de-privacidade" element={<PrivacyPolicy />} />
-        <Route path="/termos-de-uso" element={<TermsOfUse />} />
-      </Routes>
-    </Router>
   );
 }
 
