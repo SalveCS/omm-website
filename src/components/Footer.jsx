@@ -39,7 +39,7 @@ const Footer = () => {
                 <Instagram size={20} />
               </a>
               <a 
-                href="mailto:contato@ondamaremato.com" 
+                href="mailto:ondamaremato@gmail.com" 
                 className="bg-white/10 hover:bg-cyan-500 text-white p-3 rounded-full transition-all duration-300 hover-scale"
               >
                 <Mail size={20} />
@@ -53,8 +53,8 @@ const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <button 
-                  onClick={() => scrollToSection('home')}
-                  className="text-gray-300 hover:text-cyan-300 transition-colors"
+                  onClick={() => scrollToSection('inicio')}
+                  className="text-gray-300 hover:text-cyan-300 transition-colors cursor-pointer"
                 >
                   Início
                 </button>
@@ -62,7 +62,7 @@ const Footer = () => {
               <li>
                 <button 
                   onClick={() => scrollToSection('cascudo')}
-                  className="text-gray-300 hover:text-cyan-300 transition-colors"
+                  className="text-gray-300 hover:text-cyan-300 transition-colors cursor-pointer"
                 >
                   Cascudo
                 </button>
@@ -70,7 +70,7 @@ const Footer = () => {
               <li>
                 <button 
                   onClick={() => scrollToSection('energia-salgada')}
-                  className="text-gray-300 hover:text-cyan-300 transition-colors"
+                  className="text-gray-300 hover:text-cyan-300 transition-colors cursor-pointer"
                 >
                   Energia Salgada
                 </button>
@@ -78,7 +78,7 @@ const Footer = () => {
               <li>
                 <button 
                   onClick={() => scrollToSection('sobre')}
-                  className="text-gray-300 hover:text-cyan-300 transition-colors"
+                  className="text-gray-300 hover:text-cyan-300 transition-colors cursor-pointer"
                 >
                   Sobre
                 </button>
@@ -170,10 +170,10 @@ const Footer = () => {
               <span>© {currentYear} Onda Mar e Mato. Todos os direitos reservados.</span>
             </div>
             <div className="flex items-center space-x-6 text-gray-400 text-sm">
-              <a href="/politica-de-privacidade.html" className="hover:text-cyan-300 transition-colors">
+              <a href="/politica-de-privacidade" className="hover:text-cyan-300 transition-colors">
                 Política de Privacidade
               </a>
-              <a href="/termos-de-uso.html" className="hover:text-cyan-300 transition-colors">
+              <a href="/termos-de-uso" className="hover:text-cyan-300 transition-colors">
                 Termos de Uso
               </a>
               <span className="text-cyan-400 font-medium">

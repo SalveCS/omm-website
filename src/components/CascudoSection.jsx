@@ -1,7 +1,8 @@
 import { Waves, Shield, Heart, Recycle } from 'lucide-react';
 import cascudoLogo from '../assets/Cascudo_LogoMarca_Branco.png';
-import cascudoImage from '../assets/CASC.png';
+import foto17 from '../assets/Foto17.png';
 import cascudoProduct from '../assets/Cascudo_Prancha_Final_web.png';
+import foto66 from '../assets/Foto66.png';
 
 const CascudoSection = () => {
   const features = [
@@ -48,17 +49,9 @@ const CascudoSection = () => {
         </div>
 
         {/* Main Content Grid */}
-        <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
+        <div className="grid lg:grid-cols-2 gap-8 items-start mb-20">
           {/* Left Content */}
           <div className="space-y-8">
-            {/* Imagem CASC acima do conteúdo */}
-            <div className="relative mb-8">
-              <img 
-                src={cascudoImage} 
-                alt="Cascudo produto" 
-                className="rounded-2xl shadow-2xl hover-scale transition-transform duration-500 w-full"
-              />
-            </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
               <h3 className="text-2xl font-bold text-white mb-4">
                 Pequeno no Leash, Gigante no Impacto
@@ -73,7 +66,7 @@ const CascudoSection = () => {
                   href="https://ondamaremato.weebly.com/passoapasso.html"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover-scale"
+                  className="bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover-scale text-center flex items-center justify-center"
                 >
                   Guia de Instalação
                 </a>
@@ -81,26 +74,36 @@ const CascudoSection = () => {
                   href="https://ondamaremato.weebly.com/cascudo.html"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="border border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-white px-6 py-3 rounded-full font-semibold transition-all duration-300"
+                  className="border border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 text-center flex items-center justify-center"
                 >
                   Saiba Mais
                 </a>
               </div>
+            </div>
+            
+            {/* Foto66 embaixo do texto */}
+            <div className="relative">
+              <img 
+                src={foto66} 
+                alt="Equipamento Cascudo - Detalhe do produto" 
+                className="rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-300 w-full h-auto"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
             </div>
           </div>
 
           {/* Right Image - Cascudo na prancha */}
           <div className="relative">
             <img 
-              src={cascudoProduct} 
+              src={foto17} 
               alt="Cascudo na prancha" 
-              className="rounded-2xl shadow-2xl hover-scale transition-transform duration-500"
+              className="rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-300 w-full h-auto"
+              loading="eager"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-2xl"></div>
           </div>
-        </div>
-
-        {/* Features Grid */}
+        </div>      {/* Features Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {features.map((feature, index) => (
             <div 
@@ -120,56 +123,14 @@ const CascudoSection = () => {
           ))}
         </div>
 
-        {/* Product Showcase */}
-        <div className="bg-gradient-to-r from-cyan-900/30 to-blue-900/30 rounded-3xl p-8 md:p-12 border border-cyan-400/20">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                Design Elegante,
-                <br />
-                <span className="text-cyan-300">Impacto Gigante</span>
-              </h3>
-              <p className="text-gray-300 text-lg leading-relaxed mb-8">
-                Com uma aparência moderna e atual, ele não só ajuda a proteger o ambiente, 
-                mas também é uma adição estética para a prancha de surf e o leash. 
-                Por fim, o cascudo tem um propósito importante e significativo.
-              </p>
-              <div className="space-y-4">
-                <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
-                  <span className="text-white">Oferecemos uma abordagem única para a limpeza de praias</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
-                  <span className="text-white">Oportunidades para se envolver na proteção dos oceanos</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
-                  <span className="text-white">Uma comunidade unida de pessoas comprometidas</span>
-                </div>
-              </div>
-            </div>
-            <div className="relative">
-              <img 
-                src={cascudoProduct} 
-                alt="Produto Cascudo" 
-                className="rounded-2xl shadow-2xl hover-scale transition-transform duration-500"
-              />
-            </div>
-          </div>
-        </div>
-
         {/* Call to Action */}
         <div className="text-center mt-16">
           <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
             Junte-se a nós na promoção da sustentabilidade
           </h3>
-          <p className="text-gray-300 text-lg mb-8">
+          <p className="text-gray-300 text-lg">
             E na luta contra a poluição marinha
           </p>
-          <button className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white px-12 py-4 rounded-full font-bold text-lg transition-all duration-300 hover-scale shadow-lg">
-            Faça Parte do Movimento
-          </button>
         </div>
       </div>
     </section>

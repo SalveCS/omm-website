@@ -49,25 +49,25 @@ const Header = () => {
           <nav className="hidden md:flex items-center space-x-8">
             <button 
               onClick={(e) => scrollToSection('inicio', e)}
-              className="text-white hover:text-cyan-300 transition-colors font-medium"
+              className="text-white hover:text-cyan-300 transition-colors font-medium cursor-pointer"
             >
               Início
             </button>
             <button 
               onClick={(e) => scrollToSection('cascudo', e)}
-              className="text-white hover:text-cyan-300 transition-colors font-medium"
+              className="text-white hover:text-cyan-300 transition-colors font-medium cursor-pointer"
             >
               Cascudo
             </button>
             <button 
               onClick={(e) => scrollToSection('energia-salgada', e)}
-              className="text-white hover:text-cyan-300 transition-colors font-medium"
+              className="text-white hover:text-cyan-300 transition-colors font-medium cursor-pointer"
             >
               Energia Salgada
             </button>
             <button 
               onClick={(e) => scrollToSection('sobre', e)}
-              className="text-white hover:text-cyan-300 transition-colors font-medium"
+              className="text-white hover:text-cyan-300 transition-colors font-medium cursor-pointer"
             >
               Sobre
             </button>
@@ -96,25 +96,25 @@ const Header = () => {
             <div className="flex flex-col space-y-4 pt-4">
               <button 
                 onClick={(e) => scrollToSection('inicio', e)}
-                className="text-white hover:text-cyan-300 transition-colors font-medium text-left"
+                className="text-white hover:text-cyan-300 transition-colors font-medium text-left cursor-pointer"
               >
                 Início
               </button>
               <button 
                 onClick={(e) => scrollToSection('cascudo', e)}
-                className="text-white hover:text-cyan-300 transition-colors font-medium text-left"
+                className="text-white hover:text-cyan-300 transition-colors font-medium text-left cursor-pointer"
               >
                 Cascudo
               </button>
               <button 
                 onClick={(e) => scrollToSection('energia-salgada', e)}
-                className="text-white hover:text-cyan-300 transition-colors font-medium text-left"
+                className="text-white hover:text-cyan-300 transition-colors font-medium text-left cursor-pointer"
               >
                 Energia Salgada
               </button>
               <button 
                 onClick={(e) => scrollToSection('sobre', e)}
-                className="text-white hover:text-cyan-300 transition-colors font-medium text-left"
+                className="text-white hover:text-cyan-300 transition-colors font-medium text-left cursor-pointer"
               >
                 Sobre
               </button>
