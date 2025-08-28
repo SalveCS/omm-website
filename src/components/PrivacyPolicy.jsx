@@ -147,7 +147,7 @@ const PrivacyPolicy = () => {
               </ul>
               <p className="text-gray-300 leading-relaxed mt-4">
                 Para exercer qualquer um desses direitos, entre em contato conosco através do e-mail 
-                ondamaremato@ondamaremato.com.
+                ondamaremato@gmail.com.
               </p>
             </section>
 
@@ -163,7 +163,7 @@ const PrivacyPolicy = () => {
               </p>
               <div className="bg-white/5 rounded-lg p-4">
                 <p className="text-white font-semibold">Onda Mar e Mato</p>
-                <p className="text-cyan-400">E-mail: ondamaremato@ondamaremato.com</p>
+                <p className="text-cyan-400">E-mail: ondamaremato@gmail.com</p>
               </div>
             </section>
           </div>

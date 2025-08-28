@@ -192,7 +192,7 @@ const TermsOfUse = () => {
               </p>
               <div className="bg-white/5 rounded-lg p-4">
                 <p className="text-white font-semibold">Onda Mar e Mato</p>
-                <p className="text-cyan-400">E-mail: ondamaremato@ondamaremato.com</p>
+                <p className="text-cyan-400">E-mail: ondamaremato@gmail.com</p>
               </div>
             </section>
           </div>
