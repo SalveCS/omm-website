@@ -58,13 +58,13 @@ const HeroSection = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center fade-in-up">
           <button 
             onClick={(e) => scrollToSection('cascudo', e)}
-            className="bg-cyan-500 hover:bg-cyan-600 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover-scale"
+            className="bg-cyan-500 hover:bg-cyan-600 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover-scale cursor-pointer"
           >
             Conheça o Cascudo
           </button>
           <button 
             onClick={(e) => scrollToSection('energia-salgada', e)}
-            className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover-scale"
+            className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover-scale cursor-pointer"
           >
             Energia Salgada
           </button>
